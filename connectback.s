@@ -3,6 +3,9 @@
  *
  * https://blahcat.github.io/2017/06/25/qemu-images-to-play-with/
  * https://azeria-labs.com/arm-lab-vm/
+ *
+ * $ as connectback.s -o connectback.o
+ * $ ld connectback.o -o connectback
  */
 .section .text
 .global _start
