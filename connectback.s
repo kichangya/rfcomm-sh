@@ -1,5 +1,5 @@
 /* 
- * You can up a virtual ARM environment running Raspbian Linux in the QEMU emulator.
+ * You can set up a virtual ARM environment running Raspbian Linux in the QEMU emulator.
  *
  * https://blahcat.github.io/2017/06/25/qemu-images-to-play-with/
  * https://azeria-labs.com/arm-lab-vm/
