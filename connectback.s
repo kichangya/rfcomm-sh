@@ -1,19 +1,21 @@
 /* 
- * connect-back shell
- *
- * You can set up a virtual ARM environment running Raspbian Linux in the QEMU emulator.
- *
- * https://blahcat.github.io/2017/06/25/qemu-images-to-play-with/
- * https://azeria-labs.com/arm-lab-vm/
- *
- * $ make
- * $ push connectback /data/local/tmp
- * $ nc -l 8000
- * $ (another window) 
- * $ adb shell
- * $ cd /data/local/tmp
- * $ ./connectback
+ connect-back shell
+ 
+ You can set up a virtual ARM environment running Raspbian Linux in the QEMU emulator.
+ 
+ https://blahcat.github.io/2017/06/25/qemu-images-to-play-with/
+ https://azeria-labs.com/arm-lab-vm/
+ 
+ $ make
+ $ push connectback /data/local/tmp
+ $ nc -l 8000
+ $ (another window) 
+ $ adb shell
+ $ cd /data/local/tmp
+ $ ./connectback
+
  */
+
 .section .text
 .global _start
 
